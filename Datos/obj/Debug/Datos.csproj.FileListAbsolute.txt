@@ -1,0 +1,12 @@
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Datos\bin\Debug\Datos.dll.config
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Datos\bin\Debug\Datos.dll
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Datos\bin\Debug\Datos.pdb
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Datos\bin\Debug\EntityFramework.dll
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Datos\bin\Debug\EntityFramework.xml
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Datos\obj\Debug\Datos.dll
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Datos\obj\Debug\Datos.pdb

@@ -1,0 +1,176 @@
+﻿@model IEnumerable<Entidades.ClientesE>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<!-- Button trigger modal -->
+<button id="btnCrearCliente" type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCrear">
+    Añadir Cliente
+</button>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.id_cli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre_cli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.apellido_cli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.alias_cli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.contrasenia_cli)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_cli)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre_cli)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.apellido_cli)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.alias_cli)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.contrasenia_cli)
+            </td>
+            <td>
+                <a href="#" class="btn btn-danger Editar" id="@item.id_cli" name="@item.id_cli" data-toggle="modal" data-target="#ModalEditar">Editar</a>|
+                <a href="#" class="btn btn-warning Ver_Detalle" id="@item.id_cli" name="@item.id_cli" data-toggle="modal" data-target="#ModalDetalles">Detalles</a>            </td>
+        </tr>
+    }
+
+</table>
+
+<!-- Modal CREAR -->
+<div class="modal fade" id="ModalCrear" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Añadir Cliente</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="dvCrearClientes"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal EDITAR -->
+<div class="modal fade" id="ModalEditar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Editar</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="dvModificarCliente"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal DETALLES -->
+<div class="modal fade" id="ModalDetalles" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Detalles</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="dvVerDetsCliente"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#btnCrearCliente").click(function () {
+                var _url = '/Clientes/Crear';
+                $.ajax({
+                    type: "Get",
+                    url: _url,
+                    data: {},
+                    async: false,
+                    success: function (response) {
+                        $('#dvCrearClientes').html(response);
+                    },
+                    error: function (response) {
+                        if (response.responseText != "") {
+                            alert(response.responseText);
+                        }
+                    }
+                });
+            });
+        });
+
+        $(document).ready(function () {
+            $(".Editar").on("click", function () {
+                var clienteId = $(this).attr("id");
+                var _url = '/Clientes/Editar/' + clienteId;
+                $.ajax({
+                    type: "Get",
+                    url: _url,
+                    data: {},
+                    async: false,
+                    success: function (response) {
+                        $('#dvModificarCliente').html(response);
+                    },
+                    error: function (response) {
+                        if (response.responseText != "") {
+                            alert(response.responseText);
+                        }
+                    }
+                });
+            });
+        });
+
+        $(document).ready(function () {
+            $(".Ver_Detalle").on("click", function () {
+                var catgeriaId = $(this).attr("id");
+                var _url = '/Clientes/VerDetallesCliente/' + catgeriaId;
+                $.ajax({
+                    type: "Get",
+                    url: _url,
+                    data: {},
+                    async: false,
+                    success: function (response) {
+                        $('#dvVerDetsCliente').html(response);
+                    },
+                    error: function (response) {
+                        if (response.responseText != "") {
+                            alert(response.responseText);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+}

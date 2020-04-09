@@ -1,0 +1,52 @@
+﻿@model Entidades.ClientesE
+    <div id="dvVerDetsCliente">
+        <form action="/Clientes/VerDetallesCliente/" method="post">
+            <div>
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.id_cli)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.id_cli)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.nombre_cli)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.nombre_cli)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.apellido_cli)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.apellido_cli)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.alias_cli)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.alias_cli)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.contrasenia_cli)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.contrasenia_cli)
+                    </dd>
+
+                </dl>
+            </div>
+            </form>
+        </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Volver</button>
+    </div>

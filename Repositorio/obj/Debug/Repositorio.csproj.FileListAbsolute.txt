@@ -1,0 +1,12 @@
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Repositorio\bin\Debug\Repositorio.dll.config
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Repositorio\bin\Debug\Repositorio.dll
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Repositorio\bin\Debug\Repositorio.pdb
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Repositorio\bin\Debug\EntityFramework.dll
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Repositorio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Repositorio\bin\Debug\EntityFramework.xml
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Repositorio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Repositorio\obj\Debug\Repositorio.csprojAssemblyReference.cache
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Repositorio\obj\Debug\Repositorio.csproj.CoreCompileInputs.cache
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Repositorio\obj\Debug\Repositorio.csproj.CopyComplete
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Repositorio\obj\Debug\Repositorio.dll
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Repositorio\obj\Debug\Repositorio.pdb

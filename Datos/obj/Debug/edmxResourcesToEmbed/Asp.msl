@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MVC_ASPNET_TUTORIALModelStoreContainer" CdmEntityContainer="MVC_ASPNET_TUTORIALEntitiesConnection">
+    <EntitySetMapping Name="CLIENTES">
+      <EntityTypeMapping TypeName="MVC_ASPNET_TUTORIALModel.CLIENTES">
+        <MappingFragment StoreEntitySet="CLIENTES">
+          <ScalarProperty Name="id_cli" ColumnName="id_cli" />
+          <ScalarProperty Name="nombre_cli" ColumnName="nombre_cli" />
+          <ScalarProperty Name="apellido_cli" ColumnName="apellido_cli" />
+          <ScalarProperty Name="alias_cli" ColumnName="alias_cli" />
+          <ScalarProperty Name="contrasenia_cli" ColumnName="contrasenia_cli" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

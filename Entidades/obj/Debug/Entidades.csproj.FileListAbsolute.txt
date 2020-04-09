@@ -1,0 +1,6 @@
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Entidades\bin\Debug\Entidades.dll
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Entidades\obj\Debug\Entidades.dll
+C:\Users\Luis Guerra\source\repos\ASP.NET_MVC_NCapas\Entidades\obj\Debug\Entidades.pdb
