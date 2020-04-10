@@ -9,7 +9,7 @@ namespace Repositorio
 {
     public interface IRepositorio<T> where T : class
     {
-        IQueryable<T> AsQuearyable();
+        IQueryable<T> AsQueryable();
         IEnumerable<T> TraerTodo();
         IEnumerable<T> Buscar(Expression<Func<T, bool>> predicado);
 
