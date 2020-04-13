@@ -21,7 +21,7 @@ namespace Repositorio
             _context.Set<T>().Add(entidad);
         }
 
-        public IQueryable<T> AsQuearyable()
+        public IQueryable<T> AsQueryable()
         {
             return _context.Set<T>().AsNoTracking().AsQueryable();
         }
